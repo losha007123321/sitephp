@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"> -->
+    <title>Some information about PHP</title>
+</head>
+<body>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+<style>
+    /* .poster{
+        font-size: 90px;
+        font-family:fantasy;
+        color: rgb(255, 0, 0);
+        border-block: dotted 15px yellow;
+        width: 300px;
+        text-shadow: rgb(1, 1, 8) 16px 0 0px, 0 0 1em rgb(255, 251, 0), 0 0 0.2em rgb(255, 0, 0);
+        transition-property: font-size, color, border-block-color;
+        transition-duration: 1s, 1s, 1s; */
+        /* position: absolute;
+        margin-left: 580px;
+        margin-top: 1px;
+        fill: rgb(51, 255, 0);
+        stroke: rgb(221, 0, 255);
+        stroke-width: 4px;
+        
+    }
+
+.poster:hover{
+        font-size: 140px;
+        color: blue;
+        border-block-color:rgb(255, 0, 0);
+    } */
+
+
+    .poster{
+        font-size: 90px;
+        font-family:fantasy;
+        color: rgb(255, 0, 0);
+        border-block: dotted 15px yellow;
+        width: 300px;
+        text-shadow: rgb(1, 8, 1) 16px 0 0px, 0 0 1em rgb(255, 251, 0), 0 0 0.2em rgb(255, 0, 0);
+        position: absolute;
+        margin-left: 580px;
+        margin-top: 1px;
+        fill: rgb(51, 255, 0);
+        stroke: rgb(221, 0, 255);
+        /* stroke-width: 4px; */
+        animation-name: animation1;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes animation1{
+        0%{color: rgb(255, 0, 0);
+            font-size: 90px;
+            text-shadow: rgb(1, 8, 1) 16px 0 0px, 0 0 1em rgb(255, 251, 0), 0 0 0.2em rgb(255, 0, 0);
+            border-block: dotted 15px rgb(0, 4, 255);}
+        30%{color: blue;
+            text-shadow: rgb(0, 255, 0) 16px 0 0px, 0 0 1em rgb(255, 251, 0), 0 0 0.2em rgb(255, 0, 0);
+            border-block: dotted 15px rgb(255, 0, 0);}
+        70%{color: rgb(255, 255, 255);
+            font-size: 150px;
+            text-shadow: rgb(34, 0, 255) 16px 0 0px, 0 0 1em rgb(255, 251, 0), 0 0 0.2em rgb(255, 0, 0);
+            border-block: dotted 15px yellow;}
+        100%{color: rgb(255, 0, 0);
+            font-size: 90px;
+            border-block: dotted 15px rgb(17, 0, 255);}
+
+    }
+
+
+    .names1{
+        font-size: 40px;
+        font-family:fantasy;
+        color: rgb(255, 0, 0);
+        text-decoration: underline rgb(38, 0, 255);
+        /* transition-property: color, font-size, text-decoration-color;
+        transition-duration: 0.5s, 0.5s, 0.5s, 0.5s; */
+        text-shadow: rgb(255, 230, 0) 3px 0 10px;
+        animation-name: animation2;
+        animation-duration: 18s;
+        animation-iteration-count: infinite;
+    }
+
+@keyframes animation2{
+    0%{
+        font-size: 40px;
+        color: rgb(255, 0, 0);
+        text-decoration: underline rgb(38, 0, 255);
+        text-shadow: rgb(255, 230, 0) 3px 0 10px;
+    }
+    20%{
+        color: rgb(229, 255, 0);
+        font-size: 50px;
+        text-decoration-color: red;
+        text-shadow: rgb(4, 0, 255) 3px 0 10px;
+    }
+    30%{
+        font-size: 40px;
+        color: rgb(255, 0, 0);
+        text-decoration: underline rgb(38, 0, 255);
+        text-shadow: rgb(255, 230, 0) 3px 0 10px;
+    }
+    100%{
+        font-size: 40px;
+        color: rgb(255, 0, 0);
+        text-decoration: underline rgb(38, 0, 255);
+        text-shadow: rgb(255, 230, 0) 3px 0 10px;
+    }
+}
+
+
+    /* .names1:hover{
+        color: rgb(229, 255, 0);
+        font-size: 50px;
+        text-decoration-color: red;
+        text-shadow: rgb(4, 0, 255) 3px 0 10px;
+    } */
+
+    .names2{
+        font-size: 40px;
+        font-family:fantasy;
+        color: rgb(255, 0, 0);
+        text-decoration: underline rgb(38, 0, 255);
+        transition-property: color, font-size, text-decoration-color, text-shadow;
+        transition-duration: 0.5s, 0.5s, 0.5s, 0.5s;
+        text-shadow: rgb(255, 230, 0) 3px 0 10px;
+    }
+
+    .names2:hover{
+        color: rgb(229, 255, 0);
+        font-size: 50px;
+        text-decoration-color: red;
+        text-shadow: rgb(4, 0, 255) 3px 0 10px;
+    }
+
+    
+    body{
+        background-image: url(обои-слоты.jpeg);
+        background-size: 100%;
+        background-attachment: fixed;
+        
+    }
+
+    details{
+        font-size: 25px;
+        color: yellow;
+        position: absolute;
+        font-family: cursive;
+    }
+
+    li::marker{
+        content: ">";
+        color: rgb(39, 1, 255);
+    }
+
+    summary{
+        width: 310px;
+        font-size:30px;
+        color: rgb(0, 21, 255);
+        box-shadow: 10px 12px 5px rgb(246, 255, 0);
+        
+    }
+
+    .dtl{
+        margin-bottom: 10px;   
+    }
+
+    .maintext{
+        font-size: 26px;
+        color: rgb(255, 255, 255);
+        text-align: justify;
+        text-shadow: rgb(0, 255, 255) 3px 0 10px;
+    }
+
+    .maintext1{
+        font-size: 26px;
+        color: rgb(229, 255, 0);
+        text-align: justify;
+        text-shadow: rgb(21, 0, 255) 3px 0 10px;
+    }
+
+    a{
+        color: rgb(254, 249, 0);
+        font-size: 30px;
+    }
+
+    .link{
+        color: blue;
+        font-size: 26px;
+        text-shadow: rgb(255, 213, 45) 3px 0 10px;
+    }
+
+    .picture{
+        border: double 20px yellow;
+        border-radius: 20px;
+        
+    }
+
+    .picture1{
+        border: double 20px yellow;
+        border-radius: 20px;
+        width: 400px;
+        height: 250px;
+        transition-property: width, height, border-color, border-style;
+        transition-duration: 0.5s, 0.5s, 0.5s, 0.5s;
+    }
+
+    .picture1:hover{
+        width: 530px;
+        height: 342px;
+        border-color: red;
+        border-style: dotted;
+    }
+
+    .a1{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .a2{
+        display: flex;
+        width: 750px;
+        height: 550px;
+        border: double 20px yellow;
+        border-radius: 20px;
+    }
+    .a3{
+        display: flex;
+        margin-top: 82px;
+    }
+
+    .b1{
+        margin-left: 300px;
+        border: double 20px yellow;
+        border-radius: 20px;
+    }
+    .b2{
+        display: flex;
+        margin-left: 50px;
+        margin-bottom: 30px;
+        border: double 14px rgb(9, 255, 0);
+        border-radius: 20px;
+        width: 374px;
+    }
+    .b3{
+        display: flex;
+        width: 500px;
+        text-align: justify;
+
+    }
+    .b4{
+        width: 590px;
+        margin-top: 20px;
+    }
+
+    .b5{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .c1{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .c2{
+        display: flex;
+    }
+    .c3{
+        display: flex;
+    }
+
+    .d1{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .d2{
+        display: flex;
+    }
+    .d3{
+        display: flex;
+    }
+    .d4{
+        display: flex;
+    }
+
+    .last{
+        font-size: 26px;
+        color: rgb(255, 255, 255);
+        text-align: justify;
+        text-shadow: rgb(0, 255, 255) 3px 0 10px; 
+        /* transition: font-size 1s; */
+        /* transition: color 1s; */
+        position: relative;
+        transition-property: font-size, color;
+        transition-duration: 3s, 3s;
+    }
+    .last:hover{
+        font-size: 70px;
+        color: rgb(255, 0, 0);
+    }
+
+    .example{
+        color: rgb(0, 8, 255);
+        font-size: 50px;
+        text-shadow: rgb(254, 249, 0) 3px 0 10px; 
+    }
+
+    .indoor-word{
+        font-size: 26px;
+        color: rgb(255, 255, 255);
+        text-align: justify;
+        text-shadow: rgb(0, 255, 255) 3px 0 10px;
+        /* transition-property: color, font-size, text-shadow;
+        transition-duration: 0.5s, 0.5s, 0.5s; */
+        position: relative;
+        animation-name: animation3;
+        animation-duration: 18s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes animation3{
+    0%{
+        font-size: 26px;
+        color: rgb(255, 255, 255);
+        text-shadow: rgb(0, 255, 255) 3px 0 10px;
+    }
+    20%{
+        color: rgb(255, 0, 0);
+        font-size: 33px;
+        text-shadow: rgb(0, 42, 255) 3px 0 10px;
+    }
+    30%{
+        font-size: 26px;
+        color: rgb(255, 255, 255);
+        text-shadow: rgb(0, 255, 255) 3px 0 10px;
+    }
+    100%{
+        font-size: 26px;
+        color: rgb(255, 255, 255);
+        text-shadow: rgb(0, 255, 255) 3px 0 10px;
+    }
+}
+    /* .indoor-word:hover{
+        color: rgb(255, 0, 0);
+        font-size: 33px;
+        text-shadow: rgb(0, 42, 255) 3px 0 10px;
+    } */
+
+    .indoor-word1{
+        font-size: 26px;
+        color: rgb(255, 255, 0);
+        text-align: justify;
+        text-shadow: rgb(0, 255, 255) 3px 0 10px;
+        transition-property: color, font-size, text-shadow;
+        transition-duration: 0.5s, 0.5s, 0.5s;
+    }
+    .indoor-word1:hover{
+        color: rgb(255, 0, 0);
+        font-size: 33px;
+        text-shadow: rgb(47, 0, 255) 3px 0 10px;
+    }
+
+    .underpoints{
+        font-size: 35px;
+        color: rgb(255, 166, 0);
+        text-shadow: rgb(17, 0, 255) 3px 0 10px;
+        transition-property: color, font-size, text-shadow;
+        transition-duration: 1s, 1s, 1s;
+    }
+
+    .underpoints:hover{
+        color: rgb(217, 255, 0);
+        font-size: 40px;
+        text-shadow: rgb(0, 0, 0) 3px 0 10px;
+    }
+
+    .aa{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .ab{
+        display: flex;
+        background-color: rgb(100, 154, 87);
+        border-radius: 30px;
+        box-shadow: 10px 5px 5px red;
+        border: 10px blue double;
+    }
+    .ac{
+        display: flex;
+        width: 600px;
+        background-color: rgb(126, 113, 113);
+        border-radius: 30px;
+        box-shadow: 10px 5px 5px red;
+        border: 10px blue double;
+    }
+
+    .sa{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .sb{
+        display: flex;
+        background-color: rgb(100, 154, 87);
+        border-radius: 30px;
+        box-shadow: 10px 5px 5px red;
+        border: 10px blue double;
+    }
+    .sc{
+        display: flex;
+        width: 600px;
+        height: 290px;
+        margin-top: 190px;
+        background-color: rgb(126, 113, 113);
+        border-radius: 30px;
+        box-shadow: 10px 5px 5px red;
+        border: 10px blue double;
+    }
+
+    .ba{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .bb{
+        display: flex;
+        background-color: rgb(100, 154, 87);
+        border-radius: 30px;
+        box-shadow: 10px 5px 5px red;
+        border: 10px blue double;
+    }
+    .bc{
+        display: flex;
+        width: 600px;
+        height: 500px;
+        margin-top: 85px;
+        background-color: rgb(126, 113, 113);
+        border-radius: 30px;
+        box-shadow: 10px 5px 5px red;
+        border: 10px blue double;
+    }
+
+
+    .da{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .db{
+        display: flex;
+        background-color: rgb(100, 154, 87);
+        border-radius: 30px;
+        box-shadow: 10px 5px 5px red;
+        border: 10px blue double;
+        height: 105px;
+        width: 335px;
+        margin-top: 180px;
+    }
+    .dc{
+        display: flex;
+        width: 740px;
+        height: 310px;
+        margin-top: 85px;
+        background-color: rgb(126, 113, 113);
+        border-radius: 30px;
+        box-shadow: 10px 5px 5px red;
+        border: 10px blue double;
+    }
+
+
+    .ea{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .eb{
+        display: flex;
+        background-color: rgb(100, 154, 87);
+        border-radius: 30px;
+        box-shadow: 10px 5px 5px red;
+        border: 10px blue double;
+        height: 105px;
+        width: 335px;
+        margin-top: 160px;
+    }
+    .ec{
+        display: flex;
+        width: 740px;
+        height: 250px;
+        margin-top: 85px;
+        background-color: rgb(126, 113, 113);
+        border-radius: 30px;
+        box-shadow: 10px 5px 5px red;
+        border: 10px blue double;
+    }
+
+
+    .fa{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .fb{
+        display: flex;
+        background-color: rgb(100, 154, 87);
+        border-radius: 30px;
+        box-shadow: 10px 5px 5px red;
+        border: 10px blue double;
+        height: 200px;
+        width: 235px;
+        margin-top: 110px;
+    }
+    .fc{
+        display: flex;
+        width: 740px;
+        height: 250px;
+        margin-top: 85px;
+        background-color: rgb(126, 113, 113);
+        border-radius: 30px;
+        box-shadow: 10px 5px 5px red;
+        border: 10px blue double;
+    }
+
+
+    .ga{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .gb{
+        display: flex;
+        background-color: rgb(100, 154, 87);
+        border-radius: 30px;
+        box-shadow: 10px 5px 5px red;
+        border: 10px blue double;
+        height: 200px;
+        width: 235px;
+        margin-top: 110px;
+    }
+    .gc{
+        display: flex;
+        width: 740px;
+        height: 250px;
+        margin-top: 85px;
+        background-color: rgb(126, 113, 113);
+        border-radius: 30px;
+        box-shadow: 10px 5px 5px red;
+        border: 10px blue double;
+    }
+
+.ha{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+    /* .column{
+        column-count: 2;
+        height: 800px;
+    } */
+
+.anim {
+    display: flex;
+width: 400px;
+height: 300px;
+background-color: rgb(255, 230, 0);
+border-right: 15px red double;
+position: absolute;
+left: -400px;
+/* border-bottom-left-radius: 20px;
+border-bottom-right-radius: 20px; */
+border-top-right-radius: 20px;
+border-bottom-right-radius: 20px;
+transition-property: left;
+transition-duration: 0.7s;
+font-size: 16px;
+color: rgb(0, 0, 0);
+/* position: absolute; */
+font-family: cursive;
+
+}
+
+.anim:hover{
+    left: 0px;
+}
+
+.hb{
+    display: flex;
+    position: absolute;
+    left: 380px;
+    margin-top: 20px;
+    writing-mode: vertical-rl;
+}
+
+.icons{
+    color: blue;
+    font-size: 40px;
+}
+
+.content{
+    font-size: 16px;
+color: rgb(0, 0, 0);
+text-decoration: none;
+}
+
+.butn{
+    font-size: 30px;
+    color: green;
+    background-color: black;
+    border: 10px double yellow;
+    border-radius: 16px;
+    position: fixed;
+    margin-left: 1250px;
+}
+
+</style>
+
+<script>
+function button(event){
+var btn = confirm("Перейти по ссылке?");
+if (btn == true){
+    }else{
+    
+    event.preventDefault();
+    return false;
+    }
+    }
+</script>
+
+  <center><p class="poster" id="up">PHP</p></center> 
+  <a href="#up"><button class="butn">Наверх <ion-icon name="chevron-up-outline"></ion-icon></button></a>
+  <!-- <div class="dtl">
+  <details>
+    <summary>Содержание сайта:</summary>
+    <ul>
+        <li>Как подкдючить язык программирования php.</li>
+        <li>Вывод текста на экран.</li>
+        <li>Переменные и типы данных.</li>
+        <li>Математические действия.</li>
+        <li>Строковые операции.</li>
+        <li>Оператор «Switch-case».</li>
+        <li>Массивы данных. Одномерные и многомерные.</li>
+        <li>Цикл For, While и Do While. Операторы циклов.</li>
+        <li>Работа с датой.</li>
+    </ul>
+  </details> 
+</div> -->
+<div class="ha">
+<div class="anim">
+    <ul>
+        <li> <a class="content" href="#topic1">Как подкдючить язык программирования php.</a></li>
+        <li> <a class="content" href="#topic2">Вывод текста на экран.</a></li>
+        <li> <a class="content" href="#topic3">Переменные и типы данных.</a></li>
+        <li> <a class="content" href="#topic4">Математические действия.</a></li>
+        <li> <a class="content" href="#topic5">Строковые операции.</a></li>
+        <li> <a class="content" href="#topic6">Оператор «Switch-case».</a></li>
+        <li> <a class="content" href="#topic7">Массивы данных. Одномерные и многомерные.</a></li>
+        <li> <a class="content" href="#topic8">Цикл For, While и Do While. Операторы циклов.</a></li>
+        <li> <a class="content" href="#topic9">Работа с датой.</a></li>
+        <li> <a class="content" href="#topic10">Встроенные PHP функции.</a></li>
+    </ul>
+
+    <div class="hb">
+    <p class="maintext">Содержание сайта.<a class="icons"><ion-icon name="arrow-back-circle-outline"></ion-icon></a></p>
+</div>
+</div>
+</div>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<p><a class="names1" id="topic1">Как подкдючить язык программирования php.</a></p>
+<div class="a1">
+<div class="a2"><p class="maintext">Для того что бы подлючить язык программирования <b>php</b> надо загрузить из интернета архивив php. Для этого надо написать в интернете 
+    <a href="https://www.php.net/downloads.php" target="_blank" onclick="button(event)"><i class="indoor-word1">"php dowload"</i></a>, зайти на их официальный сайт и загрузить самый свежий архив. Так же, надо скачать программу <a href="https://ospanel.io/download/" target="_blank" onclick="button(event)"><i class="indoor-word1">OpenServer</i></a>, что бы всё работало правильно.
+<a class="link">Все ссылки будут в разделе <i>"Сслыки".</i></a> Программа весит около одного гигабайта памяти. Когда программа скачалась надо её установить на компьютер, для этого надо открыть ту папку которая скачалась, 
+там согласиться со всеми требованиями программы, указать папку куда скачивать все файлы, в конце нажать установить и на компьютере высветится значёк этой программы, 
+<b>но есть одно "но", программа весит около 10-ти гигабайт и в ней храниться примерно 60 тыс. файлов и если при установке указать длинный путь скачивания через много папок, то попытка скачивания может быть 
+    неудачной.</b> После того, как программа скачалась и значёк на компьютере тоже есть, то можна приступать к роботе!</p></div>
+    <div class="a3"><img class="picture" src="экран.png" width="560px" height="350px"></div>
+</div>
+<p class="maintext">Программа OpenServer выглядит так:</p>
+<div class="b5">
+<div class="b4"><img class="picture" src="Снимок экрана (5).png" width="600px" height="300px"></div>
+
+<div class="b1">
+<div class="b3"><p class="maintext">При нажатии на эту программу ничего не сработает, но на самом деле при нажатии начинает работать сервер. 
+    Что бы его включить надо зайти в панель инструмнетов нажав стрелку, обозначенной на картинке ниже.</p></div>
+<div class="b2"><img src="Снимок экрана (6).png"></div>
+</div>
+</div>
+<br>
+<p class="maintext">Дальше, при нажатии на эту стрелку высветится окно с разными предложениями, среди которых будет <code class="indoor-word">красный флаг</code> и при нажатии на этот 
+    флаг высветятся следующие предложения.</p>
+    <div class="c1">
+    <div class="c2"><img class="picture1" src="Снимок экрана (7).png" width="400px" height="300px"></div>
+    <div class="c3"><img class="picture1" src="Снимок экрана (8).png" width="400px" height="300px"></div>
+    </div>
+<p class="maintext"> Что бы запустить сервер надо нажать на зелёный флаг. <br>Потом, что бы выводить информацию из PHP надо зайти в подпункт <i class="indoor-word">Папка с проектами</i> и должна высветиться папка под названием 
+    <b class="indoor-word">localhost</b> и рядом с ней надо создать папку, в которой надо будет создать текстовый документ и переименовать его в формат php, например, дать ему какое-то название, потом точка и php: ХХХХХ.php.
+Что бы начать писать коды надо просто нажать так же на <i class="indoor-word">Папку с проектами</i> и ту папку, которую мы сохранили в формате php на неё нажимаем дважды и открывается 
+программа в которой вы программируете. А, что бы посмотреть, что быводится на екран с написанного кода надо уже зайти в подпункт <i class="indoor-word">Мои проекты</i> и там высветиться 
+таже папка, которую мы сохранили.</p>
+<div class="d1">
+    <div class="d2"><img class="picture1" src="Снимок экрана (9).png"></div>
+    <div class="d3"><img class="picture1" src="Снимок экрана (10).png"></div>
+    <div class="d4"><img class="picture1" src="Снимок экрана (11).png"></div>
+    </div>
+    <p class="maintext"><last class="last">Ну наконецто перейдём к изучению языка PHP.</last></p>
+    <br><hr>
+    <p><a class="names1" id="topic2">Вывод текста на экран.</a></p>
+     <p class="maintext">Для того, что бы выводить текст на экран используют атрибьют <b class="indoor-word">echo</b>, с помощью его можно вывести текст на экран.<br>
+    Текст надо писать в ковычках, а цифры без.</p>
+    <p class="maintext">
+        <p class="example">Пример:</p>
+        <p class="maintext1">echo "What`s up!" . "< br>" . "< hr>";<br>
+        echo  < br> 12345;</p>
+    </p>
+    <p class="maintext">Из примера можно увидет, что были поиспользованы теги <i class="indoor-word">br</i> и <i class="indoor-word">hr</i>, в языке PHP можно использовать теги из <as class="indoor-word">HTML</as>, используя определённые правила.<br>
+    Соединять теги, переменные и т.д. нужно с помощью точки, в примере можно это увидеть. В следующий теме- <b class="indoor-word">переменные и типы данных</b> эти соединения с помощью
+точки будут показаны подробнее.</p>
+<hr>
+<p> <a class="names1" id="topic3">Переменные и типы данных.</a></p>
+<p class="maintext">Переменные в языке PHP записываются с помощью знака <as class="indoor-word">доллар- $.</as><br>Тут точно так же- текст надо писать в ковычках, 
+    а цифры без.</p>
+<p class="example">Пример 1:</p>
+<p class="maintext1">$num1 = 19;<br>
+    $num2 = 51.3;<br>
+    $stroka = "Accept";<br>
+    $bool1 = true;<br>
+    $bool2 = false;</p>
+    <p class="maintext">Перемення может быть записана в виде целого числа, числа с точкой, текста или булевого выражения, у которого есть два 
+        значения- это true и false. Каждая переменная идёт со своим типом данны. Например, только для целых чисел- это тип данных, который называется <ax class="indoor-word">integer</ax> или просто
+    int. Для чисел с точкой тип данных называется <ax class="indoor-word">float</ax>, для текста- <ax class="indoor-word">string</ax>, а для будевых выражений- это <ax class="indoor-word">boolean.</ax><br>
+В языке PHP не обязательно указывать для каждой переменной тип данных, но надо понимать, что для каждой переменной существует свой тип данных, то есть, например, если
+ мы будем складывать тип данных как string и float, то это будет обрабатывться некоректно, так как эти типы данных разные.</p>
+ <p class="example">Пример 2:</p>
+ <p class="maintext">Представим, что у нас есть переменная "а" с числом и переменная "b" тоже с числом, только эта переменная будет уже записана в виде строки.</p>
+ <p class="maintext1">$a = 4.5;<br>
+    $b = "5.5";</p>
+    <p class="maintext">У этих двух переменных разные типы данных. В переменной "а" мы имеем тип данных- float, то есть это <ax class="indoor-word">число</ax> с точкой, а у переменной "b" тип 
+        данных- string, то есть это <ax class="indoor-word">строка.</ax></p>
+        <p class="maintext">После этого, мы, например, делаем такие действия:</p>
+        <p class="maintext1">echo $a + $b;</p>
+        <p class="maintext">Тут показано, что мы пытаемся сложить цифру и строчку, это не совсем правильно. Что бы это сделать, надо в нашем случае приводить тип данных 
+            второй переменной к первой. Сейчас будет описано как привести переменную к некоторым типам данных.
+        </p>
+        <ul class="maintext">
+        <li>Что бы привести к типу данных float используют функцию <a class="indoor-word1">floatval().</a></li>
+        <li>Что бы привести к типу данных integer используют функцию <a class="indoor-word1">intval().</a></li>
+        <p class="maintext">В нашем случае записывается так: <a class="maintext1">echo $a + floatval($b)</a></p>
+        <p class="maintext">И так далее, к этой теме мы ещё дойдём.<br>
+        Дальше с этими переменными можно создавать разные предложения. Например:</p>
+    </ul>
+    <p> <a class="maintext1">
+        <p class="maintext">Опять приведём пример переменных:</p>
+        $num1 = 19;<br>
+        $num2 = 51.3;<br>
+        $stroka = "Accept";<br>
+        $bool1 = true;<br>
+        $bool2 = false;<br>
+        <p class="maintext">И пример предложения с ними:</p>
+        echo "My favorite band is " . $stroka . ". " . '< br>' . "Number one- " . $num1 . ". " . '< br>' . "but " . "Second number- " . $num2 . ".";</a></p>
+        <p class="maintext">В нашем случае мы получим такое предложение:</p>
+        <p class="maintext1">My favorite band is Accept.<br>
+            Number one- 19.<br>
+            but Second number- 51.3.</p>
+    <hr>
+    <p><a class="names2" id="topic4">Математические действия.</a></p>
+    <p class="maintext">В языке <ax class="indoor-word1">PHP</ax> можно производить математические действия в виде сложения, отнимания, 
+        умножения, деления и брать процент от кокого-то числа.<br>
+    Перейдём сразу к примеру. Пускай будут две переменные "x" и "y" и с ними можно совершать такие математические действия:</p>
+    <p class="example">Пример 1:</p>
+    <p class="maintext1">
+        $x = 10;<br>
+$y = 15;<br>
+
+echo $x + $y . "< br>"; <a class="indoor-word">- Сложение.</a><br>
+echo $x - $y . "< br>"; <a class="indoor-word">- Вычитание.</a><br>
+echo $x * $y . "< br>"; <a class="indoor-word">- Умножение.</a><br>
+echo $x / $y . "< br>"; <a class="indoor-word">- Деление.</a><br>
+echo $x % $y . "< br>"; <a class="indoor-word">- Процент от числа.</a><br>
+    </p>
+    <p class="maintext">Так же к переменным "x" и "y" можно также добавить, отнять, умножить, поделить на любые числа.</p>
+    <p class="example">Пример 2:</p>
+    <p class="maintext1">
+        $x = $x + 2; <a class="maintext">В кратком формате это можно записать так: <ax class="maintext1">$x +=2;</ax></a><br>
+        $y = $y - 4; <a class="maintext">В кратком формате это можно записать так: <ax class="maintext1">$y -=4;</ax></a>
+    </p>
+    <p class="maintext">В этой теме присутствуют так же некоторые встроенные значения и встроенные математические функции.</p>
+    <p><a class="underpoints">Встроенные значения:</a></p>
+    <p class="maintext1">
+        echo M_PI . "< br>";<a class="maintext"> -Выводит на экран число Pi.</a><br>
+echo M_E . "< br>";<a class="maintext"> -Выводит на экран число E.</a>
+    </p>
+    <p><a class="underpoints">Встроенные математические функции:</a></p>
+    <p class="maintext1">
+echo abs(-3) . "< br>"; <a class="indoor-word"> //Берёт число по модулю.</a><br>
+echo abs(4) . "< br>";<a class="indoor-word"> //Берёт число по модулю.</a><br>
+echo ceil(0.3) . "< br>";<a class="indoor-word"> //Округляет число только до большего.</a><br>
+echo floor(7.9) . "< br>";<a class="indoor-word"> //Округляет число только до меньшего.</a><br>
+echo round(1.5) . "< br>";<a class="indoor-word"> //Округляет число как в математика.</a><br>
+echo round(5.4) . "< br>";<a class="indoor-word"> //Округляет число как в математика.</a><br>
+echo round(5.448274830, 3) . "< br>";<a class="indoor-word"> //Округляет число как в математика и ставит после запятой три знака.</a><br>
+echo round(5.448274830, 2) . "< br>";<a class="indoor-word"> //Округляет число как в математика и ставит после запятой два знака.</a><br>
+echo round(5.448274830, 4) . "< br>";<a class="indoor-word"> //Округляет число как в математика и ставит после запятой четыре знака.</a><br>
+echo mt_rand(-10,10) . " br>";<a class="indoor-word"> //Рандомно выбирает число в диапазоне от -10 до 10.</a><br>
+echo min(2, -2, 4.7, 12, 1, 5.1) . "< br>";<a class="indoor-word"> //Выбирает среди чисел минимальное значение.</a><br>
+echo max(2, -2, 4.7, 12, 1, 5.1) . "< br>";<a class="indoor-word"> //Выбирает среди чисел максимальное значение.</a><br>
+echo sin(-10) . "< br>";<a class="indoor-word"> //Считает синус кокого-то числа.</a><br>
+echo cos(10) . "< br>";<a class="indoor-word"> //Считает косинус кокого-то числа.</a><br>
+echo tan(10) . "< br>" . "< br>" . "< br>" . "< hr>";<a class="indoor-word"> //Считает тангенс кокого-то числа.</a><br>
+    </p>
+    <hr>
+    <p><a class="names2" id="topic5">Строковые операции.</a></p>
+<p class="maintext"><a class="indoor-word">Строковые операции</a> -это те операци, которые можно выполнять над строками.<br>
+Представим, что у нас есть переменныя и в ней записано любое слово.</p>
+<p class="maintext1">$str = "Hello!"; <a class="maintext">Дальше это слово мы просто выведим на экран:</a></p>
+<p class="maintext1">echo "Word- $str" . "." . "< br>"; <a class="maintext">В примере можно увидеть, что переменная была объединена не 
+    с помощью точки, а просто была записана вместе с переменной в ковычках. Дальше перейдём к некоторым функциям со строками.
+</a></p>
+<p class="maintext1">
+    $lnth = strlen($str); <a class="indoor-word"> -Считает колличество символов в слове.</a><br>
+echo $lnth . "< br>"; <a class="maintext"> -Дальше его просто вывели на экран.</a>
+</p>
+<br>
+<p class="maintext1">echo trim ("   The Doors!           ") . "< br>"; <a class="indoor-word"> -Убирает все пробелы до и после слов(а).</a><br>
+<p class="maintext1">echo strtolower ("AbCdEfGh") . "< br>"; <a class="indoor-word"> -Делает все буквы нижнего регистра, то есть делает все <br>буквы в строке маленькими.</a><br>
+<p class="maintext1">echo strtoupper ("AbCdEfGh") . "< br>"; <a class="indoor-word"> -Делает все буквы верхнего регистра то есть делает все буквы<br> в строке большими.</a><br>
+<p class="maintext1">echo md5 ("Hello"); <a class="indoor-word"> -Позволяет закешировать строку.</a><br>
+</p><br><hr>
+<p><a class="names2">Условные операторы.</a></p>
+<p class="maintext">Условные операторы являются одними из важных элементов в языке программирования PHP. С помощью операторов мы можем 
+    прописть некоторые конструкции, в которых будут условия и если одно из условий будет верным, то будет выполнятся какой-то из 
+    блоков кода.<br> Перейдём к примеру.</p>
+    <p class="example">Пример 1:</p>
+        <p class="maintext">Пускай будут две переменные:</p>
+        <p class="maintext1">
+        $a1 = 10;<br>
+        $a2 = "Area";
+    </p>
+    <p class="maintext">Потом к ним задаются разные условия:</p>
+    <div class="aa">
+    <div class="ab"><p class="maintext1">
+        if($a1 > 10)<br>   
+        echo "YES" . "< br>";<br>
+        else if ($a2 != "Area"){<br>
+            echo "Good!";<br>
+        }<br>
+        else if ($a1 > 11){<br>
+            echo "True.";<br>
+        }<br>
+        else if($a2 == "Hello"){<br>
+            echo "No";<br>
+        }<br>
+        else{<br>
+            echo "Nothing" . "< br>";<br>
+        }<br>
+    </p></div>
+    <div class="ac"><p class="maintext">Тут рассказывается, что дано условие- если $a1 > 10, то будет выводиться на экран слово "YES" 
+        (вторая строка, смотреть левее.). Потом, если $a2 != "Area", то будет выводиться на экран слово "Good" (четвёртая строка ,смотреть левее). Дальше, если 
+        $a1 > 11, то то будет выводиться на экран слово "True" (седьмая строка, смотреть левее). Потом, если $a2 == "Hello", то будет выводиться 
+        на экран слово "No" (десятая строка, смотреть левее). И если ни одно условие не является верным, то будет срабатывать условие 
+        else {echo "Nothing" . "< br>";} и будет выводиться на экран слово "Nothing" (13-ая строка, смотреть левее).<br> В этом случае 
+        будет высвечиваться слово "Nothing", так как ни одно условие выше не было верным.
+    </p></div>
+</div>
+<p class="example">Пример 2:</p>
+<p class="maintext">Пускай теперь будут даны переменные:</p>
+        <p class="maintext1">
+        $a1 = 10;<br>
+        $a2 = "Area";<br>
+        $Areyouok = true;
+    </p>
+    <div class="sa">
+<div class="sb"><p class="maintext1">
+    if($a1 == 9)<br>
+    echo "Good!" . "< br>";<br>
+    else if($a1 != 10 || $Areyouok = false){<br>
+        echo "Right" . "< br>";<br>
+    }<br>
+    <br>
+else if($a1 > 11 && $a2 = "Some"){<br>
+    echo "Word!" . "< br>";<br>
+}<br>
+<br>
+else if($a1 > 9 && $Areyouok = true){<br>
+    echo "Peace!" . "< br>";<br>
+}<br>
+<br>
+else if($a1 < 9 && $a1 == 10){<br>
+    echo "No!" . "< br>";<br>
+}<br>
+<br>
+else{<br>
+    echo "Nothing" . "< br>";<br>
+}
+</p></div>
+<div class="sc">
+    <p class="maintext">В примере 2 рассказывается, что есть три переменные и к ним преписываются условия- если $a1 != 10 или
+        $Areyouok = false, то будет выводиться на экран слово "Right", потом, если $a1 > 11 и $a2 = "Some", то будет выводиться на 
+        экран слово "Word", дальше, если $a1 > 9 и $Areyouok = true, то будет выводиться на экран слово "Peace", в нашем случае так 
+        и будет, будет выводиться на экран слово "Peace".
+    </p>
+</div>
+</div>
+<p><a class="underpoints">Встроенные знаки:</a></p>
+<p><a class="indoor-word1">||</a><a class="maintext"> -или.</a></p>
+<p><a class="indoor-word1">&&</a><a class="maintext"> -и.</a></p>
+<p class="maintext">Надо заприметить, что условия считываются с верху в низ, то есть, если самое первое условие оказалось верным, 
+    значит условия, что были написаны ниже просто будт игнорироваться системой.</p><br>
+    <hr>
+    <p><a class="names2" id="topic6">Оператор «Switch-case»</a></p>
+    <p class="maintext">Оператор <a class="indoor-word">«Switch-case»</a> относится к условным операторам с отличием, то, что он может проверять только одну 
+        переменную не множество её условий.<br>Перейдём к примеру.</p>
+        <p class="maintext">Пускай будет дана переменная $a1 = 10; и к ней только одной этой переменной прописываются условия.</p>
+        <div class="ba">
+<div class="bb"><p class="maintext1">switch($a1){<br>
+        case 5:<br>
+            echo "case 5";<br>
+            break;<br><br>
+        case 3:<br>
+            echo "case 3";<br>
+            break;<br><br>
+        case 4.5:<br>
+            echo "case 7";<br>
+            break;<br><br>
+        case 10:<br>
+            echo "case 10";<br>
+            break;<br><br>
+        default:<br>
+            echo "Default";<br>
+            break;<br>
+        }</p></div>
+        
+
+        <div class="bc"><p class="maintext">В этом примере рассказывается, что дана переменная $a1 = 10; и к ней прописываются разные случаи 
+            и если эти случия (условия) будут совпадать с переменной, то будет выводится какой-то текст на экран.<br>
+            Первый случай- если переменная равна 5-ти, то на экран будет выводиться текст "case 5".<br>
+            Второй случай- если переменная равна 3-ём, то на экран будет выводиться текст "case 3".<br>
+            Третий случай- если переменная равна 4.5, то на экран будет выводиться текст "case 4.5".<br>
+            Четвёртый случай- если переменная равна 10-ти, то на экран будет выводиться текст "case 10".<br>
+            В нашем случае на экран будет выводится текст "case 10", так как переменная равна 10-ти.
+        </p></div>
+    </div>
+    <p class="maintext">Надо заприметить, что в конце после каждого случия надо писать <a class="indoor-word1">break</a>, а в самом конце, после всех условий можно писать по желанию <a class="indoor-word1">default</a> и то, что будет у него записано в <a class="indoor-word1">echo</a>, то и будет выводиться на экран, как бы означая, что ни одно условие не было первильным и срабатывает <a class="indoor-word1">default.</a></p>
+<hr>
+    <p><a class="names2" id="topic7">Массивы данных. Одномерные и многомерные.</a></p>
+    <p class="maintext">Массив можно пердставить в виде переменной, только в переменной мы можем записать лишь одно значение, 
+        а в массиве их может быть одно, два, три, пять, десять, сто и больше. В массив можно записать простое число, число с точкой, 
+        слово или строку или булевое выражение. Массив записываю с помощью тега <a class="indoor-word1">array</a>.<br>Перейдём к примеру.</p>
+        <br><br>
+        <p><a class="underpoints">Одномерные массивы.</a></p>
+        <p class="example">Пример 1:</p>
+        <p class="maintext1">
+            $numbers = array(7, 12, -8, 2, -3);<br>
+            $numbers [1] = 15;<br>
+            echo $numbers [1] . "< br>";
+        </p>
+        <p class="maintext">В примере 1 рассказывается, что записан массив 
+            <a class="indoor-word1">$numbers = array(7, 12, -8, 2, -3);</a>, потом на экран мы хотим вывести <a class="indoor-word1">echo $numbers [1]</a>, 
+        что это означает? В массиве отсчёт начинается с нуля, по этому 7- это 0, 12= это 1, -8- это 2, 2- это 3 и т.д. <br>
+        По сути на экран будет выводиться 12, но перед этим була записано строка, что <a class="indoor-word1">$numbers [1] = 15;</a>, по этому на экран будет выводиться 15.</p>
+        <p class="example">Пример 2:</p>
+        <p class="maintext1">
+            $arr = [15, -3, "Queen", false, 23.6, "-4"];<br>
+            $arr[2] = "King" . "< br>" . "< br>";<br>
+            echo $arr[2];
+        </p>
+        <p class="maintext">В примере 2 рассказывается, что записан массив 
+            <a class="indoor-word1">$arr = [15, -3, "Queen", false, 23.6, "-4"];</a>, потом на экран мы хотим вывести <a class="indoor-word1">echo $arr[2];</a>, 
+        что это означает? В массиве отсчёт начинается с нуля, по этому 15- это 0, -3- это 1, "Queen"- это 2, false- это 3 и т.д. 
+        По сути на экран будет выводиться "Queen", но перед этим була записано строка, что <a class="indoor-word1">$arr[2] = "King";</a>, по этому на экран будет выводиться "King".</p>
+        <br><br>
+        <p><a class="underpoints">Ассоциативные массивы.</a></p>
+        <p class="example">Пример:</p>
+        <p class="maintext1">
+            $blank = ["age" => 19, "name" => "Philip", "hobby" => "Football"];<br>
+            $blank ["name"] = "Alex". "< br>" . "< br>";<br>
+            echo $blank["name"];
+        </p>
+        <p class="maintext">В этом примере рассказывается, что дан массив 
+            <a class="indoor-word1">$blank = ["age" => 19, "name" => "Philip", "hobby" => "Football"];</a> в который были записаны типа 
+        ключи из кода для разных слов, соединённых с помощью символов <a class="indoor-word1">=></a>. И тут мы не записываем номер элемента в массиве, который хотим вывести на экран, а прописываем тот указатель, 
+        который был записан типа в виде ключа к слову. В этом примере показано, что мы хотим вывести на экран слово "Philip", видя по строчке 
+        <a class="indoor-word1">echo $blank["name"];</a>, но во второй строке записано, что <a class="indoor-word1">$blank ["name"] = "Alex"</a>, 
+        по этому на экран будет высвечиваться слово "Alex".</p>
+        <br><br>
+        <p><a class="underpoints">Многомерные массивы.</a></p>
+        <p class="example">Пример:</p>
+        <p class="maintext1">
+            $system = [[18, 'loop', 2.18], [true, '22'], ['Help', 3, 0.99, false]];<br>
+            $system [2] [0] = "It is Ok!";<br>
+            echo $system [2] [0];
+        </p>
+        <p class="maintext">В этом примере рассказывается, что дан массив в котором были записаны ещё несколько массивов. Тут отсчёт идёт 
+            так же с нуля. В примере показано, что выводится на экран текст 'Help', судя по строчке 
+            <a class="indoor-word1">echo $system [2] [0];</a>. Так как массив [18, 'loop', 2.18]- это 0, массив [true, '22']- это 1, 
+            а массив ['Help', 3, 0.99, false]- это 2, но при этом же в массиве ['Help', 3, 0.99, false] 'Help'- это 0, 3- это 1, 0.99- это 
+            2, а false- это 3, по этому на экран будет выводится именно 'Help', но в строчке выше 
+            <a class="indoor-word1">$system [2] [0] = "It is Ok!";</a> обозначено, что номера [2] [0] -это "It is Ok!", по этому эта строка 
+            и будет выводиться.
+        </p>
+        <hr>
+        <p><a class="names2" id="topic8">Цикл For, While и Do While. Операторы циклов.</a></p>
+        <p class="maintext">Циклы -это специальные конструкции с помощью которых мы можем выполнять код нескоько раз подряд, причём 
+            колличество выполняемых раз мы можем указать самостоятельно. <br>Перейдём к примеру:
+        </p>
+        <p><a class="underpoints">Цикл For:</a></p>
+        <p class="example">Пример 1:</p>
+        <div class="da">
+        <div class="db"><p class="maintext1">
+            for ($a = 1; $a <= 12; $a ++) <br>
+            echo $a . ", ";
+        </p></div>
+
+        <div class="dc"><p class="maintext">В этом примере рассказывается, что записан цикл, в котором объясняется, что числа которые будут 
+            высвечиваться на экран начнутся с единицы <a class="indoor-word1">($a = 1;)</a>, потом к этой единицы с кажым разом 
+            будет прибавляться единица <a class="indoor-word1">($a ++)</a> и счёт закончится <br> тогда, 
+            когда последнее число не будет больше или равняться 12-ти. <a class="indoor-word1">($a <= 12;)</a>.<br>То есть числа, 
+            которые будут высвечиваться на экран будут: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12.</p></div>
+        </div>
+        <br>
+        <p class="example">Пример 2:</p>
+        <div class="ea">
+            <div class="eb"><p class="maintext1">
+                for ($b = 30; $b > 3; $b -= 4.7)<br>
+                echo $b . ", ";
+            </p></div>
+    
+            <div class="ec"><p class="maintext">В этом примере рассказывается, что записан цикл, в котором объясняется, что числа которые будут 
+                высвечиваться на экран начнутся с 30-ти <a class="indoor-word1">($b = 30;)</a>, потом от тридцати с кажым разом 
+                будет отниматься 4.7 <a class="indoor-word1">($b -= 4.7;)</a> и счёт закончится тогда, 
+                когда последнее число не будет меньше трёх. <a class="indoor-word1">($b > 3;)</a>.<br>То есть числа, 
+                которые будут высвечиваться на экран будут: 30, 25.3, 20.6, 15.9, 11.2, 6.5.</p></div>
+            </div>
+            <br><br><br>
+            <p><a class="underpoints">Цикл While:</a></p>
+            <p class="example">Пример:</p>
+            <div class="fa">
+            <div class="fb"><p class="maintext1">
+                $b = 0.81;<br>
+                while($b < 20){<br>
+                    echo $b . ", ";<br>
+                     $b *=3.9;<br>
+                }<br>
+            </p></div>
+            <div class="fc"><p class="maintext">В этом примере рассказывается, что записан цикл, в котором объясняется, что числа которые будут 
+                высвечиваться на экран начнутся с 0.81 <a class="indoor-word1">($b = 0.81;)</a>, потом 0.81 с каждым разом будет умножаться 
+            на 3.9 <a class="indoor-word1">($b *=3.9;)</a> и счёт закончится тогда, когда последнее число будет не больше 20-ти 
+            <a class="indoor-word1">(while($b < 20))</a>. <br>То есть числа, которые будут высвечиваться на экран будут: 
+            0.81, 3.159, 12.3201.</p></div>
+        </div>
+        <br><br><br>
+            <p><a class="underpoints">Цикл Do While:</a></p>
+            <p class="example">Пример:</p>
+            <div class="ga">
+            <div class="gb"><p class="maintext1">
+                $c = 50;<br>
+                do{<br>
+                    echo $c . ", ";<br>
+                    $c-=6;<br>
+                }while($c > 12);<br>
+            </p></div>
+
+            <div class="gc"><p class="maintext">В этом примере рассказывается, что записан цикл, в котором объясняется, что числа которые будут 
+                высвечиваться на экран начнутся с 50-ти <a class="indoor-word1">($c = 50;)</a>, потом от 50-ти каждый раз будет отниматься 
+            6 <a class="indoor-word1">($c-=6;)</a> и счёт закончится тогда, когда последнее <br> число будет не меньше 12-ти 
+            <a class="indoor-word1">(while($c > 12);)</a> <br>То есть числа, которые будут высвечиваться на экран будут:
+            50, 44, 38, 32, 26, 20, 14.</p></div>
+        </div>
+        <hr>
+        <p><a class="names2" id="topic9">Работа с датой.</a></p>
+        <p class="maintext">В языке PHP очень много функций которые позволяют работать с датой и с временем. <br>Перейдём к примеру:</p>
+        <p class="maintext1">
+            1) echo date("Год-Y. Месяц-F. День-l. Время-H:i:s") . "< br>";<br>
+            2) echo date("Короткая запись: j.m.Y; H:i:s") . "< br>";<br>
+            3) echo date("j.m.Y; H:i:s", time() - 5000) . "< br>";<br>
+            4) echo date("j.m.Y; H:i:s", strtotime("-4 month + 3 day")) . "< br>";<br>
+            5) echo date("j.m.Y; H:i:s", strtotime("2 year ago, next month, -10 second")) . "< br>";<br>
+        </p>
+        <p class="maintext">В первой строчке рассказывается, что записана дата, а именно указан год, месяц, день и время. 
+            Эти все данные указаны спациальными символами, которые мы можем увидеть в каждой строчке. Каждый из этих символов указывает
+            определённое значение. Например, большая английская буква <a class="indoor-word1">H</a> указывает <a class="indoor-word1">часы</a>, маленькая английская 
+            буква <a class="indoor-word1">i</a> указывает <a class="indoor-word1">минуты</a>, а маленькая английская буква <a class="indoor-word1">s</a> 
+            указывает <a class="indoor-word1">часы</a>. <br>
+            Потом задаётся вопрос, какой символ указывает год, месяц, неделю и т.д.? Все эти сиволы есть на официальном сайте PHP. <br>
+            Всё, что нужно сделать это написать в интернете <a class="indoor-word1">php date format</a> и перейти на их официальный сайт
+             или просто <br> воспользоваться ссылкой справа.
+            <a href="https://www.php.net/manual/en/datetime.format.php" target="_blank" onclick="button(event)">
+                <i class="indoor-word1">Символы времени.</i></a>
+        </p>
+        <p class="maintext">Так были построены первая и вторая строки <br>
+        В третей строчке записана ещё функция <a class="indoor-word1">time</a>. Эта функция позволяет прибавить или отнять какое-то 
+    колличество секунд. <br>
+        В четвёртой строке записана функция <a class="indoor-word1">strtotime</a>. Эта функция позволяет прибавить или отнять какое-то 
+    колличество лет, <br> месяцев, дней, часов, минут и секунд. <br>
+    В пятой строке записана таже функция - <a class="indoor-word1">strtotime</a>. Только теперь в ней такая логика. Если написать на 
+английском, например, 2 year ago, next month, -10 second, last week, next day, 5 day ago, то всё это обработается правильно, вот такая 
+тут логика.</p>
+<hr>
+        <p><a class="names2" id="topic10">Встроенные PHP функции.</a></p>
+        <p class="maintext">Первый пример -это будет пример по роботе с массивами.</p>
+        <p class="example">Пример 1:</p>
+        <p class="maintext1">
+            $lid1 = [3, 12, 6, 0.3, 4];<br>
+            unset($lid1[2]);<br>
+            $lid1 = array_values($lid1);<br>
+            sort($lid1);<br>
+            print_r($lid1);
+        </p>
+        <p class="maintext">Пускай бужет записан массив к большенству примеров $lid1. Тут описывается функция <a class="indoor-word1">sort</a>. Эта функция расставляет все числа<br> в массиве в 
+        порядке увеличения.</p>
+        <br>
+        <p class="example">Пример 2:</p>
+        <p class="maintext1">
+            rsort($lid1);<br>
+            print_r($lid1);
+        </p>
+        <p class="maintext">Тут описывается функция <a class="indoor-word1">rsort</a>. Эта функция расставляет все числа в массиве в 
+            порядке уменьшения.</p>
+            <br>
+        <p class="example">Пример 3:</p>
+        <p class="maintext1">
+            shuffle($lid1);<br>
+            print_r($lid1);
+        </p>
+        <p class="maintext">Тут описывается функция <a class="indoor-word1">shuffle</a>. Эта функция расставляет все числа в массиве в 
+        хаотичном порядке.</p>
+        <br>
+        <p class="maintext">Дальше перейдём к такому примеру.</p>
+        <p class="maintext">Пускай дальше будут записаны массивы <a class="indoor-word">$nik1 = [2, 80, 3.22]; и 
+        $nik2 = ["xxxx", "12", 12];</a>. Потом запишем так:</p>
+        <p class="maintext1">
+            $nik3 = array_merge($nik1, $nik2);<br>
+            print_r($nik3);
+        </p>
+        <p class="maintext">Тут описывается функция <a class="indoor-word1">array_merge</a>, которая может объединить несколко 
+            массивов в один массив.</p>
+            <p class="maintext">Дальше перейдём к такому примеру.</p>
+        <p class="maintext1">$asa = 10;<br>
+            $asa1 = "Good!";<br>
+            echo gettype($asa) . "< br>";<br>
+            echo is_integer($asa) . "< br>";<br>
+            echo gettype($asa1) . "< br>";<br>
+            echo is_float($asa1) . "< br>";<br>
+            echo is_string($asa1) . "< br>";
+        </p>
+        <p class="maintext">В этом примере рассказывается, что записаны две переменные <a class="indoor-word1">$asa = 10;</a> и 
+            <a class="indoor-word1">$asa1 = "Good!";</a>. Первая переменная является <br> типом данных integer, а вторая -string. Потом в 
+        третей и пятой строке описывается функция <a class="indoor-word1">gettype</a>, эта функция выводит тип данных переменной. 
+        Дальше в четвёртой строке как бы спрашивается переменная $asa относится к типу данных integer и если это так, то на экран 
+        будет выводиться единица, как бы подтверждая, что это True -правда. В шестой троке спрашивается, что относится ли переменная $asa1 к типу 
+        данных float, если переменная относится к такому типу данных, то будет высвечиваться на екране единица, а если не относится, то 
+        на экране ничего высвечиваться не будет, как бы подтверждая, что это False -ложь.</p>
+
+
+
+
+</body>
+</html>
